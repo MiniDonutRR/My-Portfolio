@@ -26,7 +26,8 @@ a,
   transition: all 300ms ease;
 }
 
-/* DESKTOP NAV */
+/* style.css */
+/* Desktop styles */
 
 nav,
 .nav-links {
@@ -66,8 +67,17 @@ a:hover {
   cursor: default;
 }
 
-/* HAMBURGER MENU */
+/* mediaqueries.css */
+/* Tablet styles */
+@media only screen and (max-width: 768px) {
+  /* Your tablet-specific styles */
+}
 
+
+/* HAMBURGER MENU */
+@media only screen and (max-width: 480px) {
+  /* Your mobile-specific styles */
+}
 #hamburger-nav {
   display: none;
 }
