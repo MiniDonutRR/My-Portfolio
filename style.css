@@ -121,14 +121,6 @@ a:hover {
 .menu-links.open {
   max-height: 300px;
 }
-.nav-links a.night-mode {
-    color: #fff;
-}
-
-#hamburger-nav.night-mode {
-  background-color: #444;
-  box-shadow: none;
-}
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
