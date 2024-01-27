@@ -19,15 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
 });
-nightModeToggle.addEventListener('change', function () {
-    if (this.checked) {
-        body.classList.add('night-mode');
-        hamburgerNav.classList.add('night-mode');
-        menuLinks.forEach(link => link.classList.add('night-mode'));
-    } else {
-        body.classList.remove('night-mode');
-        hamburgerNav.classList.remove('night-mode');
-        menuLinks.forEach(link => link.classList.remove('night-mode'));
-    }
-    
-});
+
