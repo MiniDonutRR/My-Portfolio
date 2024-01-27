@@ -1,99 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Add your styling, including night mode styles if needed */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #f0f0f0; /* Set your desired background color */
-        }
-
-        .nav-links, .menu-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .nav-links li, .menu-links li {
-            margin-right: 15px;
-        }
-
-        .toggle-container, .hamburger-menu {
-            cursor: pointer;
-        }
-
-        /* Add more styling as needed */
-
-        /* Night mode styles */
-        .night-mode {
-            background-color: #111; /* Set your desired background color for night mode */
-            color: #fff; /* Set your desired text color for night mode */
-        }
-    </style>
-</head>
-<body>
-
-<!-- Desktop Navigation -->
-<nav id="desktop-nav">
-    <div class="logo">My Portfolio</div>
-    <ul class="nav-links">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="toggle-container" onclick="toggleNightMode()">
-            🌙 <!-- Moon emoji -->
+          🌙 <!-- Moon emoji -->
         </li>
-    </ul>
-</nav>
-
-<!-- Mobile Navigation (Hamburger Menu) -->
-<nav id="hamburger-nav">
-    <div class="logo">My Portfolio</div>
-    <div class="hamburger-menu" onclick="toggleMenu()">
-        <div class="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <div class="menu-links">
-        <ul>
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<script>
-    // Your night mode toggle logic here
-    function toggleNightMode() {
+      </ul>
+    </nav>
+    
+    <script>
+      function toggleNightMode() {
+        // Your night mode toggle logic here
+        // For example, you can toggle a class on the body element
         document.body.classList.toggle('night-mode');
-    }
-
-    // Add your toggleMenu() function if it's not provided
-    function toggleMenu() {
-        // Toggle your mobile menu visibility
-        // Add your logic to show/hide the menu
-    }
-</script>
-
-</body>
-</html>
-
+      }
+    </script>
+<nav id="hamburger-nav">
+  <div class="logo">My Portfolio</div>
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <div class="menu-links">
+    <ul>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 <section id="profile">
   <div class="section__pic-container">
     <img src="./assets/profile_2.png" alt="Simon Raloso profile picture" />
