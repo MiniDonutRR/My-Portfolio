@@ -66,6 +66,21 @@ a:hover {
   cursor: default;
 }
 
+/* Night Mode Styles */
+body.night-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar.night-mode {
+    background-color: #444;
+    box-shadow: none;
+}
+
+.menu-links a.night-mode {
+  color: #fff;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -429,19 +444,4 @@ footer {
 footer p {
   text-align: center;
 }
-/* Night Mode Styles */
-body.night-mode {
-    background-color: #333;
-    color: #fff;
-}
 
-#navbar.night-mode {
-    background-color: #444;
-    box-shadow: none;
-}
-
-
-
-.menu-links a.night-mode {
-  color: #fff;
-}
