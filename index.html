@@ -31,22 +31,34 @@
     </script>
 <nav id="hamburger-nav">
   <div class="logo">My Portfolio</div>
-  <div class="hamburger-menu" onclick="toggleMenu()">
-    <div class="hamburger-icon">
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-  </div>
-  <div class="menu-links">
-    <ul>
+    <div class="menu-links">
       <li><a href="#about" onclick="toggleMenu()">About</a></li>
       <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
       <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
       <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+      <li class="toggle-container" onclick="toggleNightMode()">
+        🌙 <!-- Moon emoji -->
+      </li>
+    </ul>
+  </nav>
+  
+  <script>
+    function toggleNightMode() {
+      // Your night mode toggle logic here
+      // For example, you can toggle a class on the body element
+      document.body.classList.toggle('night-mode');
+    }
+  </script>
+    </div>
+  </div>
+</nav>
+</nav>
 <section id="profile">
   <div class="section__pic-container">
     <img src="./assets/profile_2.png" alt="Simon Raloso profile picture" />
