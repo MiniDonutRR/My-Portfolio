@@ -1,24 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const nightModeToggle = document.getElementById('nightModeToggle');
-    const body = document.body;
-    const navbar = document.getElementById('navbar');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    const moonButton = document.querySelector('.moon-button');
-
-    moonButton.addEventListener('click', function () {
-        nightModeToggle.checked = !nightModeToggle.checked;
-        toggleNightMode();
-    });
-
-    function toggleNightMode() {
-        if (nightModeToggle.checked) {
-            body.classList.add('night-mode');
-            navbar.classList.add('night-mode');
-            navLinks.forEach(link => link.classList.add('night-mode'));
-        } else {
-            body.classList.remove('night-mode');
-            navbar.classList.remove('night-mode');
-            navLinks.forEach(link => link.classList.remove('night-mode'));
-        }
-    }
-});
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
