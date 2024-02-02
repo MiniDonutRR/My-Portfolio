@@ -64,35 +64,14 @@ a:hover {
 
 .logo:hover {
   cursor: default;
-}
 
-/* Night Mode Styles */
-body.night-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-#navbar.night-mode {
-    background-color: #444;
-    box-shadow: none;
-}
-
-.nav-links a.night-mode {
-    color: #fff;
 }
 /* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
 }
-#hamburger-nav.night-mode {
-    background-color: #444;
-    box-shadow: none;
-}
 
-.menu-links a.night-mode {
-    color: #fff;
-}
 .hamburger-menu {
   position: relative;
   display: inline-block;
